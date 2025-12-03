@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Tarefas CRUD</title>
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
+
     <h1>Lista de Tarefas</h1>
 
+    <!-- Formulário -->
     <form id="form-adicionar">
         <input type="text" id="input-titulo" placeholder="Nova tarefa..." required>
         <button type="submit">Adicionar</button>
     </form>
 
     <hr>
-    
+
+    <!-- Lista -->
     <ul id="lista-tarefas">
         <li>Carregando tarefas...</li>
     </ul>
 
-<script type="module" src="/index.js"></script> 
+    <!-- Seu script TypeScript compilado (ou interpretado pelo Vite) -->
+    <script type="module" src="/index.ts"></script>
 </body>
 </html>
